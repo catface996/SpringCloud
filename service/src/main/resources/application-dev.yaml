@@ -1,8 +1,15 @@
 server:
   port: 7001
 
-#DATABASE CONFIG
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:6001/eureka/
+
 spring:
+  application:
+    name: service
+#DATABASE CONFIG
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
     username: hanma

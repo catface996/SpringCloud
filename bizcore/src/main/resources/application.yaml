@@ -1,9 +1,9 @@
 spring:
   application:
-    name: eureka-client
+    name: bizcore
 
 server:
-  port: 6101
+  port: 6201
 
 eureka:
   client:

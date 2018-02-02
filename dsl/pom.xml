@@ -10,7 +10,7 @@
     <modelVersion>4.0.0</modelVersion>
     <packaging>jar</packaging>
     <version>1.0.0-SNAPSHOT</version>
-    <artifactId>eureka-client</artifactId>
+    <artifactId>dsl</artifactId>
 
     <dependencies>
         <dependency>
@@ -21,10 +21,14 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-actuator</artifactId>
         </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-feign</artifactId>
+        </dependency>
     </dependencies>
 
     <build>
-        <finalName>eureka-client</finalName>
+        <finalName>dsl</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
@@ -32,6 +36,5 @@
             </plugin>
         </plugins>
     </build>
-
 
 </project>

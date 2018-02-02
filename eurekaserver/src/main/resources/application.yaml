@@ -9,6 +9,9 @@ eureka:
     fetchRegistry: false
     serviceUrl:
       defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+  server:
+    enable-self-preservation: false # 设为false，关闭自我保护
+    eviction-interval-timer-in-ms: 15000 # 清理间隔（单位毫秒，默认是60*1000）
 
 
 

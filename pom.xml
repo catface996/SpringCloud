@@ -10,6 +10,9 @@
         <module>service</module>
         <module>eurekaserver</module>
         <module>eurekaclient</module>
+        <module>masterdata</module>
+        <module>bizcore</module>
+        <module>dsl</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -39,6 +42,8 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
+
+            <!-- 服务发现与注册 begin -->
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-starter-eureka-server</artifactId>
@@ -49,11 +54,45 @@
                 <artifactId>spring-cloud-starter-eureka</artifactId>
                 <version>LATEST</version>
             </dependency>
+            <!-- 服务发现与注册 end -->
+
+            <!-- 健康检查 begin-->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-actuator</artifactId>
+                <version>1.5.10.RELEASE</version>
+            </dependency>
+            <!-- 健康检查 end-->
+
+            <!-- 负载均衡 begin-->
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
-                <artifactId>spring-cloud-netflix-eureka-client</artifactId>
+                <artifactId>spring-cloud-starter-ribbon</artifactId>
                 <version>LATEST</version>
             </dependency>
+            <!-- 负载均衡 end-->
+
+            <!-- 服务调用 begin-->
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-starter-feign</artifactId>
+                <version>LATEST</version>
+            </dependency>
+            <!-- 服务调用 end -->
+
+            <!-- 熔断保护 begin -->
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-starter-hystrix</artifactId>
+                <version>LATEST</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-starter-hystrix-dashboard</artifactId>
+                <version>LATEST</version>
+            </dependency>
+            <!-- 熔断保护 end -->
+
             <dependency>
                 <groupId>com.baomidou</groupId>
                 <artifactId>mybatis-plus</artifactId>
@@ -74,6 +113,11 @@
                 <artifactId>druid</artifactId>
                 <version>LATEST</version>
             </dependency>
+            <dependency>
+                <groupId>mysql</groupId>
+                <artifactId>mysql-connector-java</artifactId>
+                <version>5.1.44</version>
+            </dependency>
 
             <!-- Code generator test sample-->
             <dependency>
@@ -82,12 +126,7 @@
                 <version>1.7</version>
                 <scope>test</scope>
             </dependency>
-            <dependency>
-                <groupId>mysql</groupId>
-                <artifactId>mysql-connector-java</artifactId>
-                <version>5.1.44</version>
-                <scope>test</scope>
-            </dependency>
+
         </dependencies>
     </dependencyManagement>
 

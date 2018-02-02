@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: dsl
+
+server:
+  port: 6301
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:6001/eureka/
+
+#熔断保护
+feign:
+  hystrix:
+    enabled: true
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 3000

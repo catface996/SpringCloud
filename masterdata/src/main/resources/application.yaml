@@ -1,9 +1,9 @@
 spring:
   application:
-    name: eureka-client
+    name: master-data
 
 server:
-  port: 6101
+  port: 6401
 
 eureka:
   client:
