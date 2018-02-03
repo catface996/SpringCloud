@@ -13,6 +13,7 @@
         <module>masterdata</module>
         <module>bizcore</module>
         <module>dsl</module>
+        <module>ribbonconsumer</module>
     </modules>
     <packaging>pom</packaging>
 

@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: ribbon-consumer
+
+server:
+  port: 6501
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:6001/eureka/
