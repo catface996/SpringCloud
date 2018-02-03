@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: master-data
+
+server:
+  port: 6401
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:6001/eureka/
