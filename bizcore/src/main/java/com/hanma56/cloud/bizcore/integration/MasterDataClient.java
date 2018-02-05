@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
  * @author 张钟
  * @date 2018/2/2
  */
-@FeignClient(value = "master-data")
+@FeignClient(value = "masterdata")
 public interface MasterDataClient {
 
     /**

@@ -21,7 +21,7 @@ public class HelloService {
      */
     @HystrixCommand(fallbackMethod = "findByIdFallback")
     public String hiService() {
-        return restTemplate.getForObject("http://master-data/hello",String.class);
+        return restTemplate.getForObject("http://masterdata/hello",String.class);
     }
 
     /**

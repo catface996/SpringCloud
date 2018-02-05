@@ -16,3 +16,6 @@ dsl为服务门面,bizcore为核心服务层,masterdata为基础服务层
 #ribbon调用关系
 
 ribbonconsummer 调用 masterdata,为了体现负载均衡的效果,建议通过执行jar包的方式,可以指定不同的masterdata端口来区别服务
+
+#zuul 调用关系
+zuul直接调用masterdata,为了体现负责均衡,可以启动两个master服务,指定不同的端口
