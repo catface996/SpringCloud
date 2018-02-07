@@ -15,6 +15,8 @@
         <module>dsl</module>
         <module>ribbonconsumer</module>
         <module>zuul</module>
+        <module>configserver</module>
+        <module>docker-demo</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -102,6 +104,14 @@
                 <version>LATEST</version>
             </dependency>
             <!-- 网关 end-->
+
+            <!-- 配置 begin -->
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-config-server</artifactId>
+                <version>LATEST</version>
+            </dependency>
+            <!-- 配置 end -->
 
             <dependency>
                 <groupId>com.baomidou</groupId>

@@ -8,14 +8,14 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-    <version>1.0.0-SNAPSHOT</version>
     <packaging>jar</packaging>
-    <artifactId>zuul</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+    <artifactId>configserver</artifactId>
 
     <dependencies>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-zuul</artifactId>
+            <artifactId>spring-cloud-config-server</artifactId>
         </dependency>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
@@ -28,7 +28,7 @@
     </dependencies>
 
     <build>
-        <finalName>zuul</finalName>
+        <finalName>configserver</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
@@ -36,4 +36,5 @@
             </plugin>
         </plugins>
     </build>
+
 </project>

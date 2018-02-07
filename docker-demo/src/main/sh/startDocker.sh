@@ -1,0 +1,1 @@
+docker run -p 8080:7070 -t docker-demo:1.0.0-SNAPSHOT

@@ -1,0 +1,22 @@
+server:
+  port: 6701
+
+spring:
+  application:
+    name: configserver
+
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/ZZJupiter/SpringCloudConfig/
+          searchPaths: respo
+          username:
+          password:
+      label: master
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:6001/eureka/
+
