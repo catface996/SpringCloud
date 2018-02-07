@@ -19,3 +19,10 @@ ribbonconsummer 调用 masterdata,为了体现负载均衡的效果,建议通过
 
 #zuul 调用关系
 zuul直接调用masterdata,为了体现负责均衡,可以启动两个master服务,指定不同的端口
+
+#docker 镜像
+# 1. 登录docker账号 命令行登录  docker login 如果docker cloud中未创建镜像,需创建,例如创建镜像:catface
+# 2. tag 镜像
+# 3. push 镜像
+docker tag docker-demo:1.0.0-SNAPSHOT zlyxzq/catface:latest
+docker push zlyxzq/catface:latest
